@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.pageObject.LoginPage;
 
-public class T001_LoginPage extends LoginPage
+public class T001_LoginPage extends BaseClass
 {
 	
 
