@@ -12,7 +12,7 @@ public class readConfig {
 	{
 		try {
 			pro=new Properties();
-			File file=new File("/AutomationFramework001/Configuration/config.properties");
+			File file=new File("./Configuration/config.properties");
 			FileInputStream fis=new FileInputStream(file);
 			pro.load(fis);
 			
