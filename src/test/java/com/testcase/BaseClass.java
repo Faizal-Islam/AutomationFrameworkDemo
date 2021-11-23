@@ -39,7 +39,7 @@ public class BaseClass {
 		}
 
 		else if(browser.equalsIgnoreCase("IE"))
-		{
+		{ 
 
 			System.setProperty("webdriver.ie.driver",rd.getIEPath());
 			driver=new InternetExplorerDriver();
