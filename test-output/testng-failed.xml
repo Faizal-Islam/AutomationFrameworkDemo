@@ -5,15 +5,16 @@
     <listener class-name="com.utilities.Reporting"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="IE"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.testcase.T001_LoginPage">
+      <class name="com.testcase.T003_addCustomer">
         <methods>
-          <include name="login_test"/>
+          <include name="login"/>
+          <include name="addCustomer" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.testcase.T001_LoginPage -->
+      </class> <!-- com.testcase.T003_addCustomer -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

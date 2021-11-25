@@ -3,6 +3,7 @@ package com.testcase;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Action;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -25,15 +26,17 @@ public class T001_LoginPage extends BaseClass
 		lp.login();
 
 
-		if(driver.getPageSource().contains("Welcome To Manager's Page of Guru99 Bank"))
+		if(isAlertPresent()==true)
 		{
-			Assert.assertTrue(true);
-			log.info("login successful");
+			log.info("Login Failed");
+			driver.switchTo().alert().accept();
 		}
 		else
 		{
-			log.info("login failed due to incorrect credentials");
-			Assert.assertTrue(false);
+			Assert.assertTrue(true);
+			log.info("login successful");
+			logout();
+			driver.switchTo().alert().accept();	
 		}
 	}
 }

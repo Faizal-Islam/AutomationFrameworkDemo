@@ -1,15 +1,24 @@
 package com.testcase;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.* ;
 
+import com.aventstack.extentreports.utils.FileUtil;
 import com.google.j2objc.annotations.Property;
 import com.utilities.readConfig;
 
@@ -54,6 +63,32 @@ public class BaseClass {
 	public void tearDown()
 	{
 		log.info("quitting browser");
-		driver.quit();
+	//	driver.quit();
+	}
+	
+	public void logout()
+	{
+		WebElement logout=driver.findElement(By.linkText("Log out"));
+		logout.click();
+	}
+	
+	public boolean isAlertPresent()
+	{
+		try {
+		driver.switchTo().alert();
+		return true;
+		}
+		catch(NoAlertPresentException e)
+		{
+			return false;
+		}
+	}
+	
+	public void takeScreenshot() throws IOException
+	{
+		File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File path=new File("./Screenshots");
+		FileUtils.copyFile(f, path);
+		
 	}
 }

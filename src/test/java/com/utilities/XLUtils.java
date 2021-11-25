@@ -48,12 +48,12 @@ public class XLUtils {
 	
 	public static String getCellData(String xlfile,String xlsheet,int rownum,int colnum) throws IOException
 	{
-		fi=new FileInputStream(xlfile);
-		wb=new XSSFWorkbook(fi);
-		ws=wb.getSheet(xlsheet);
-		row=ws.getRow(rownum);
-		cell=row.getCell(colnum);
-		String data;
+		fi=new FileInputStream(xlfile); //opening the excel
+		wb=new XSSFWorkbook(fi); //create workbook obj
+		ws=wb.getSheet(xlsheet); //creating sheet obj
+		row=ws.getRow(rownum); //creating row obj
+		cell=row.getCell(colnum); //creating cell obj
+		String data; // this will be returned if exception  
 		try 
 		{
 			DataFormatter formatter = new DataFormatter();
