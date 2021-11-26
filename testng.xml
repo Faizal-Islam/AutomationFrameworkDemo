@@ -10,11 +10,11 @@
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
-			 <!-- <class name="com.testcase.T001_LoginPage" />
+			<class name="com.testcase.T001_LoginPage" />
 			<class name="com.testcase.T002_LoginPageDDT" />
-			<class name="com.testcase.T004_addCustomer" /> --> 
-			<class name="com.testcase.T003_addCustomer" /> 
-			
+			<class name="com.testcase.T003_addCustomer" />
+			<class name="com.testcase.T004_addCustomer" />
+
 		</classes>
 	</test> <!-- Test -->
 

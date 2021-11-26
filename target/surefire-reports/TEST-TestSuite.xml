@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="31.631" tests="4" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="83.604" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\java\jre1.8.0_201\bin"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\java\jdk1.8.0_201\jre\bin"/>
     <property name="java.vm.version" value="25.201-b09"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\admin\eclipse-workspace\AutomationFramework001"/>
@@ -19,49 +19,58 @@
     <property name="user.dir" value="C:\Users\admin\eclipse-workspace\AutomationFramework001"/>
     <property name="java.runtime.version" value="1.8.0_201-b09"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\java\jre1.8.0_201\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\java\jdk1.8.0_201\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\admin\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1943912015495718208.tmp"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.8.4\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\java\jre1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\app\admin\product\11.1.0\db_5\bin;C:\app\admin\product\11.1.0\db_3\bin;C:\app\admin\product\11.1.0\db_2\bin;C:\app\admin\product\11.1.0\db_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft\Web Platform Installer\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\java\jdk1.8.0_201\bin;C:\Program Files\apache-maven-3.8.4\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\system32;;."/>
+    <property name="java.library.path" value="C:\Program Files\java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\app\admin\product\11.1.0\db_5\bin;C:\app\admin\product\11.1.0\db_3\bin;C:\app\admin\product\11.1.0\db_2\bin;C:\app\admin\product\11.1.0\db_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft\Web Platform Installer\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\java\jdk1.8.0_201\bin;C:\Program Files\apache-maven-3.8.4\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.8.4/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.8.4\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\admin"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="admin"/>
-    <property name="java.class.path" value="C:\Users\admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.11.0.20190220-2117\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.8.4\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\java\jre1.8.0_201"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Program Files\java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_201"/>
-    <property name="java.ext.dirs" value="C:\Program Files\java\jre1.8.0_201\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\java\jre1.8.0_201\lib\resources.jar;C:\Program Files\java\jre1.8.0_201\lib\rt.jar;C:\Program Files\java\jre1.8.0_201\lib\sunrsasign.jar;C:\Program Files\java\jre1.8.0_201\lib\jsse.jar;C:\Program Files\java\jre1.8.0_201\lib\jce.jar;C:\Program Files\java\jre1.8.0_201\lib\charsets.jar;C:\Program Files\java\jre1.8.0_201\lib\jfr.jar;C:\Program Files\java\jre1.8.0_201\classes"/>
+    <property name="java.ext.dirs" value="C:\Program Files\java\jdk1.8.0_201\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\java\jdk1.8.0_201\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\admin\eclipse-workspace\AutomationFramework001\EMBEDDED"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.8.4"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="login_test" classname="com.testcase.T001_LoginPage" time="14.097"/>
-  <testcase name="loginDDTtest" classname="com.testcase.T002_LoginPageDDT" time="17.534"/>
-  <testcase name="loginDDTtest" classname="com.testcase.T002_LoginPageDDT" time="9.97"/>
-  <testcase name="loginDDTtest" classname="com.testcase.T002_LoginPageDDT" time="20.764"/>
+  <testcase name="login_test" classname="com.testcase.T001_LoginPage" time="18.277"/>
+  <testcase name="loginDDTtest" classname="com.testcase.T002_LoginPageDDT" time="16.551"/>
+  <testcase name="loginDDTtest" classname="com.testcase.T002_LoginPageDDT" time="13.668"/>
+  <testcase name="loginDDTtest" classname="com.testcase.T002_LoginPageDDT" time="34.186"/>
+  <testcase name="login" classname="com.testcase.T003_addCustomer" time="7.655"/>
+  <testcase name="LoginCust" classname="com.testcase.T004_addCustomer" time="10.49"/>
+  <testcase name="addCust" classname="com.testcase.T004_addCustomer" time="12.833"/>
+  <testcase name="addCustomer" classname="com.testcase.T003_addCustomer" time="17.798"/>
+  <testcase name="addCustomer" classname="com.testcase.T003_addCustomer" time="16.185"/>
 </testsuite>

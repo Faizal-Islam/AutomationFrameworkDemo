@@ -1,0 +1,11 @@
+com\testcase\BaseClass.class
+com\testcase\junk.class
+com\testcase\T002_LoginPageDDT.class
+com\pageObject\LoginPage.class
+com\pageObject\AddCustomer.class
+com\testcase\T004_addCustomer.class
+com\testcase\T001_LoginPage.class
+com\utilities\readConfig.class
+com\utilities\Reporting.class
+com\testcase\T003_addCustomer.class
+com\utilities\XLUtils.class

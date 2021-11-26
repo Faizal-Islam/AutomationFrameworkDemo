@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="171829" started-at="2021-11-23T11:52:08Z" finished-at="2021-11-23T11:55:00Z">
+  <suite name="Suite" duration-ms="395351" started-at="2021-11-26T18:26:47Z" finished-at="2021-11-26T18:33:22Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="171829" started-at="2021-11-23T11:52:08Z" finished-at="2021-11-23T11:55:00Z">
-      <class name="com.testcase.T002_LoginPageDDT">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T002_LoginPageDDT@1188e820]" name="setup" is-config="true" duration-ms="53200" started-at="2021-11-23T11:53:07Z" finished-at="2021-11-23T11:54:00Z">
+    <test name="Test" duration-ms="395351" started-at="2021-11-26T18:26:47Z" finished-at="2021-11-26T18:33:22Z">
+      <class name="com.testcase.T004_addCustomer">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T004_addCustomer@40f08448]" name="setup" is-config="true" duration-ms="51430" started-at="2021-11-26T18:31:30Z" finished-at="2021-11-26T18:32:22Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,75 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginDDTtest(java.lang.String, java.lang.String)[pri:0, instance:com.testcase.T002_LoginPageDDT@1188e820]" name="loginDDTtest" duration-ms="17515" started-at="2021-11-23T11:54:12Z" data-provider="loginData" finished-at="2021-11-23T11:54:29Z">
+        <test-method status="PASS" signature="LoginCust()[pri:0, instance:com.testcase.T004_addCustomer@40f08448]" name="LoginCust" duration-ms="10497" started-at="2021-11-26T18:32:22Z" finished-at="2021-11-26T18:32:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginCust -->
+        <test-method status="PASS" signature="addCust()[pri:0, instance:com.testcase.T004_addCustomer@40f08448]" name="addCust" duration-ms="12833" started-at="2021-11-26T18:32:32Z" finished-at="2021-11-26T18:32:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCust -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T004_addCustomer@40f08448]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-11-26T18:32:45Z" finished-at="2021-11-26T18:32:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.T004_addCustomer -->
+      <class name="com.testcase.T003_addCustomer">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T003_addCustomer@166fa74d]" name="setup" is-config="true" duration-ms="67159" started-at="2021-11-26T18:30:16Z" finished-at="2021-11-26T18:31:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testcase.T003_addCustomer@166fa74d]" name="login" duration-ms="7648" started-at="2021-11-26T18:31:23Z" finished-at="2021-11-26T18:31:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="addCustomer([Ljava.lang.String;)[pri:1, instance:com.testcase.T003_addCustomer@166fa74d]" name="addCustomer" duration-ms="17797" started-at="2021-11-26T18:32:48Z" data-provider="setData" depends-on-methods="com.testcase.T003_addCustomer.login" finished-at="2021-11-26T18:33:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@659925f4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="addCustomer([Ljava.lang.String;)[pri:1, instance:com.testcase.T003_addCustomer@166fa74d]" name="addCustomer" duration-ms="16183" started-at="2021-11-26T18:33:06Z" data-provider="setData" depends-on-methods="com.testcase.T003_addCustomer.login" finished-at="2021-11-26T18:33:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4cd1c1dc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T003_addCustomer@166fa74d]" name="tearDown" is-config="true" duration-ms="3" started-at="2021-11-26T18:33:22Z" finished-at="2021-11-26T18:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.T003_addCustomer -->
+      <class name="com.testcase.T002_LoginPageDDT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T002_LoginPageDDT@101df177]" name="setup" is-config="true" duration-ms="56548" started-at="2021-11-26T18:28:05Z" finished-at="2021-11-26T18:29:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginDDTtest(java.lang.String, java.lang.String)[pri:0, instance:com.testcase.T002_LoginPageDDT@101df177]" name="loginDDTtest" duration-ms="16534" started-at="2021-11-26T18:29:11Z" data-provider="loginData" finished-at="2021-11-26T18:29:28Z">
           <params>
             <param index="0">
               <value>
@@ -34,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDTtest -->
-        <test-method status="PASS" signature="loginDDTtest(java.lang.String, java.lang.String)[pri:0, instance:com.testcase.T002_LoginPageDDT@1188e820]" name="loginDDTtest" duration-ms="9989" started-at="2021-11-23T11:54:29Z" data-provider="loginData" finished-at="2021-11-23T11:54:39Z">
+        <test-method status="PASS" signature="loginDDTtest(java.lang.String, java.lang.String)[pri:0, instance:com.testcase.T002_LoginPageDDT@101df177]" name="loginDDTtest" duration-ms="13675" started-at="2021-11-26T18:29:28Z" data-provider="loginData" finished-at="2021-11-26T18:29:41Z">
           <params>
             <param index="0">
               <value>
@@ -50,7 +118,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDTtest -->
-        <test-method status="PASS" signature="loginDDTtest(java.lang.String, java.lang.String)[pri:0, instance:com.testcase.T002_LoginPageDDT@1188e820]" name="loginDDTtest" duration-ms="20748" started-at="2021-11-23T11:54:39Z" data-provider="loginData" finished-at="2021-11-23T11:55:00Z">
+        <test-method status="PASS" signature="loginDDTtest(java.lang.String, java.lang.String)[pri:0, instance:com.testcase.T002_LoginPageDDT@101df177]" name="loginDDTtest" duration-ms="34183" started-at="2021-11-26T18:29:41Z" data-provider="loginData" finished-at="2021-11-26T18:30:16Z">
           <params>
             <param index="0">
               <value>
@@ -66,13 +134,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDTtest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T002_LoginPageDDT@1188e820]" name="tearDown" is-config="true" duration-ms="3" started-at="2021-11-23T11:55:00Z" finished-at="2021-11-23T11:55:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T002_LoginPageDDT@101df177]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-11-26T18:30:16Z" finished-at="2021-11-26T18:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testcase.T002_LoginPageDDT -->
       <class name="com.testcase.T001_LoginPage">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T001_LoginPage@130f889]" name="setup" is-config="true" duration-ms="44407" started-at="2021-11-23T11:52:08Z" finished-at="2021-11-23T11:52:53Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T001_LoginPage@2f490758]" name="setup" is-config="true" duration-ms="59017" started-at="2021-11-26T18:26:47Z" finished-at="2021-11-26T18:27:46Z">
           <params>
             <param index="0">
               <value>
@@ -83,11 +151,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login_test()[pri:0, instance:com.testcase.T001_LoginPage@130f889]" name="login_test" duration-ms="14078" started-at="2021-11-23T11:52:53Z" finished-at="2021-11-23T11:53:07Z">
+        <test-method status="PASS" signature="login_test()[pri:0, instance:com.testcase.T001_LoginPage@2f490758]" name="login_test" duration-ms="18272" started-at="2021-11-26T18:27:46Z" finished-at="2021-11-26T18:28:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T001_LoginPage@130f889]" name="tearDown" is-config="true" duration-ms="3" started-at="2021-11-23T11:53:07Z" finished-at="2021-11-23T11:53:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T001_LoginPage@2f490758]" name="tearDown" is-config="true" duration-ms="2" started-at="2021-11-26T18:28:05Z" finished-at="2021-11-26T18:28:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
