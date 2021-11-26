@@ -3,7 +3,9 @@ package com.pageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -16,8 +18,10 @@ public class AddCustomer {
 		PageFactory.initElements(sdriver,this);
 	}
 
-	@FindBy(xpath = "/html/body/div[3]/div/ul/li[2]/a")
-	WebElement NewCust;
+	@FindBy(how = How.XPATH, using ="/html/body/div[3]/div/ul/li[2]/a")
+	@CacheLookup
+	WebElement lnkAddNewCustomer;
+
 
 	@FindBy(name="name")
 	WebElement CustName;
@@ -54,7 +58,7 @@ public class AddCustomer {
 
 	public void clickAddCust()
 	{
-		driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[2]/a")).click();
+		lnkAddNewCustomer.click();
 	}
 
 	public void setCustName(String cname)
@@ -64,13 +68,13 @@ public class AddCustomer {
 
 	public void setCustGender(String value) 
 	{
-		Select s=new Select(CustGender);
-		s.selectByValue(value);
+		CustGender.click();
 	}
 
-	public void setCustDOB(String cDOB)
-	{
-		CustDOB.sendKeys(cDOB);
+	public void setCustDOB(String mm) {
+		CustDOB.sendKeys(mm);
+		
+		
 	}
 
 	public void setCustAddress(String cAddr)
