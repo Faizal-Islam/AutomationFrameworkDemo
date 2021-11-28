@@ -58,4 +58,10 @@ public class readConfig {
 		String firefoxPath=pro.getProperty("firefoxpath");
 		return firefoxPath;
 	}
+	
+	public String getUserID()
+	{
+		String custID=pro.getProperty("CustomerId");
+		return custID;
+	}
 }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -21,6 +22,8 @@ import org.testng.annotations.* ;
 import com.aventstack.extentreports.utils.FileUtil;
 import com.google.j2objc.annotations.Property;
 import com.utilities.readConfig;
+
+import net.bytebuddy.utility.RandomString;
 
 public class BaseClass {
 
@@ -63,7 +66,7 @@ public class BaseClass {
 	public void tearDown()
 	{
 		log.info("quitting browser");
-	//	driver.quit();
+		//driver.quit();
 	}
 	
 	public void logout()
@@ -90,5 +93,23 @@ public class BaseClass {
 		File path=new File("./Screenshots");
 		FileUtils.copyFile(f, path);
 		
+	}
+	
+	public String getTitle()
+	{
+		String title=driver.getTitle();
+		return title;
+	}
+	
+	public String randomNumber()
+	{
+		String randomNum=RandomStringUtils.randomNumeric(10);
+		return randomNum;
+	}
+	
+	public String randomString()
+	{
+		String randomStr=RandomStringUtils.randomAlphabetic(8);
+		return randomStr;
 	}
 }

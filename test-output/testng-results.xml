@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="46303" started-at="2021-11-26T10:27:10Z" finished-at="2021-11-26T10:27:56Z">
+  <suite name="Suite" duration-ms="75199" started-at="2021-11-28T07:20:36Z" finished-at="2021-11-28T07:21:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="46303" started-at="2021-11-26T10:27:10Z" finished-at="2021-11-26T10:27:56Z">
-      <class name="com.testcase.T003_addCustomer">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T003_addCustomer@161b062a]" name="setup" is-config="true" duration-ms="32018" started-at="2021-11-26T10:27:10Z" finished-at="2021-11-26T10:27:42Z">
+    <test name="Test" duration-ms="75199" started-at="2021-11-28T07:20:36Z" finished-at="2021-11-28T07:21:51Z">
+      <class name="com.testcase.T005_EditCustomer">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T005_EditCustomer@161b062a]" name="setup" is-config="true" duration-ms="39957" started-at="2021-11-28T07:20:36Z" finished-at="2021-11-28T07:21:16Z">
           <params>
             <param index="0">
               <value>
@@ -18,37 +18,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.testcase.T003_addCustomer@161b062a]" name="login" duration-ms="7132" started-at="2021-11-26T10:27:42Z" finished-at="2021-11-26T10:27:49Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:com.testcase.T005_EditCustomer@161b062a]" name="login" duration-ms="9431" started-at="2021-11-28T07:21:16Z" finished-at="2021-11-28T07:21:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="addCustomer([Ljava.lang.String;)[pri:1, instance:com.testcase.T003_addCustomer@161b062a]" name="addCustomer" duration-ms="3124" started-at="2021-11-26T10:27:51Z" data-provider="setData" depends-on-methods="com.testcase.T003_addCustomer.login" finished-at="2021-11-26T10:27:54Z">
+        <test-method status="PASS" signature="EditCust([Ljava.lang.String;)[pri:2, instance:com.testcase.T005_EditCustomer@161b062a]" name="EditCust" duration-ms="10243" started-at="2021-11-28T07:21:31Z" data-provider="CustData" depends-on-methods="com.testcase.T005_EditCustomer.login" finished-at="2021-11-28T07:21:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@6a1ebcff]]>
+                <![CDATA[[Ljava.lang.String;@61e3a1fd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="addCustomer([Ljava.lang.String;)[pri:1, instance:com.testcase.T003_addCustomer@161b062a]" name="addCustomer" duration-ms="1714" started-at="2021-11-26T10:27:54Z" data-provider="setData" depends-on-methods="com.testcase.T003_addCustomer.login" finished-at="2021-11-26T10:27:56Z">
+        </test-method> <!-- EditCust -->
+        <test-method status="PASS" signature="EditCust([Ljava.lang.String;)[pri:2, instance:com.testcase.T005_EditCustomer@161b062a]" name="EditCust" duration-ms="9833" started-at="2021-11-28T07:21:41Z" data-provider="CustData" depends-on-methods="com.testcase.T005_EditCustomer.login" finished-at="2021-11-28T07:21:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@19868320]]>
+                <![CDATA[[Ljava.lang.String;@51abf713]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T003_addCustomer@161b062a]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-11-26T10:27:56Z" finished-at="2021-11-26T10:27:56Z">
+        </test-method> <!-- EditCust -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T005_EditCustomer@161b062a]" name="tearDown" is-config="true" duration-ms="2" started-at="2021-11-28T07:21:51Z" finished-at="2021-11-28T07:21:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testcase.T003_addCustomer -->
+      </class> <!-- com.testcase.T005_EditCustomer -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
