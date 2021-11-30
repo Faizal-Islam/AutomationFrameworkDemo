@@ -7,14 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.testcase.T005_EditCustomer">
+      <class name="com.testcase.T006_MiniStatement">
         <methods>
-          <include name="login"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="EditCust" invocation-numbers="0 1"/>
+          <include name="miniStm"/>
         </methods>
-      </class> <!-- com.testcase.T005_EditCustomer -->
+      </class> <!-- com.testcase.T006_MiniStatement -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

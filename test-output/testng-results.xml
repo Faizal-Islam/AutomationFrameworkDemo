@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="75199" started-at="2021-11-28T07:20:36Z" finished-at="2021-11-28T07:21:51Z">
+  <suite name="Suite" duration-ms="53638" started-at="2021-11-30T18:42:30Z" finished-at="2021-11-30T18:43:24Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="75199" started-at="2021-11-28T07:20:36Z" finished-at="2021-11-28T07:21:51Z">
-      <class name="com.testcase.T005_EditCustomer">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T005_EditCustomer@161b062a]" name="setup" is-config="true" duration-ms="39957" started-at="2021-11-28T07:20:36Z" finished-at="2021-11-28T07:21:16Z">
+    <test name="Test" duration-ms="53638" started-at="2021-11-30T18:42:30Z" finished-at="2021-11-30T18:43:24Z">
+      <class name="com.testcase.T006_MiniStatement">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testcase.T006_MiniStatement@691a7f8f]" name="setup" is-config="true" duration-ms="36954" started-at="2021-11-30T18:42:31Z" finished-at="2021-11-30T18:43:08Z">
           <params>
             <param index="0">
               <value>
@@ -18,37 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:1, instance:com.testcase.T005_EditCustomer@161b062a]" name="login" duration-ms="9431" started-at="2021-11-28T07:21:16Z" finished-at="2021-11-28T07:21:26Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testcase.T006_MiniStatement@691a7f8f]" name="login" duration-ms="10077" started-at="2021-11-30T18:43:08Z" finished-at="2021-11-30T18:43:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="EditCust([Ljava.lang.String;)[pri:2, instance:com.testcase.T005_EditCustomer@161b062a]" name="EditCust" duration-ms="10243" started-at="2021-11-28T07:21:31Z" data-provider="CustData" depends-on-methods="com.testcase.T005_EditCustomer.login" finished-at="2021-11-28T07:21:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@61e3a1fd]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="miniStm()[pri:0, instance:com.testcase.T006_MiniStatement@691a7f8f]" name="miniStm" duration-ms="6215" started-at="2021-11-30T18:43:18Z" finished-at="2021-11-30T18:43:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditCust -->
-        <test-method status="PASS" signature="EditCust([Ljava.lang.String;)[pri:2, instance:com.testcase.T005_EditCustomer@161b062a]" name="EditCust" duration-ms="9833" started-at="2021-11-28T07:21:41Z" data-provider="CustData" depends-on-methods="com.testcase.T005_EditCustomer.login" finished-at="2021-11-28T07:21:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@51abf713]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditCust -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T005_EditCustomer@161b062a]" name="tearDown" is-config="true" duration-ms="2" started-at="2021-11-28T07:21:51Z" finished-at="2021-11-28T07:21:51Z">
+        </test-method> <!-- miniStm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.T006_MiniStatement@691a7f8f]" name="tearDown" is-config="true" duration-ms="3" started-at="2021-11-30T18:43:24Z" finished-at="2021-11-30T18:43:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testcase.T005_EditCustomer -->
+      </class> <!-- com.testcase.T006_MiniStatement -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
